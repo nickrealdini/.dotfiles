@@ -1,0 +1,101 @@
+!-------------------------------------------------------------------------------
+!
+!	urxvt - Setting
+!
+!
+
+! geometry is defined at launch with -geometry 140x50 option
+!URxvt*geometry: 140x50 
+URxvt*buffered: true
+URxvt*background: black
+# White text
+#URxvt*foreground: #FFFFFF
+# Green text
+URxvt*foreground: #00FF00
+URxvt*cursorColor: yellow
+URxvt*underlineColor: #8FC45A
+URxvt*font:xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true
+URxvt*termName: rxvt
+!set to 32-bit for real transparency (compositing required)
+urxvt*depth:             32
+!transparent=0000 opaque=ffff
+urxvt*background: rgba:1111/1111/1111/dddd
+!urxvt*background: rgba:1111/1111/1111/0000
+
+!------------------
+!False tranparency
+!------------------
+!URxvt*transparent: true
+!URxvt*shading: 50 
+
+Urxvt*secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
+
+
+!------------------
+!url clickable
+!-------------------
+URxvt*scrollBar:	false
+URxvt.perl-ext:      default,url-select
+URxvt.perl-ext-common:      default,tabbed
+!URxvt*matcher.button:   1 
+URxvt*keysym.M-u:    perl:url-select:select_next
+URxvt*url-select.launcher:   /usr/bin/firefox -new-tab
+URxvt*url-select.underline: true
+
+! tabs
+!URxvt*perl-ext-common: default,tabbed
+!-----------------
+!tabs colors
+!----------------
+URxvt*tabbed*tabbar-fg: 8
+URxvt*tabbed*tabbar-bg: 0
+URxvt*tabbed*tab-fg: 2
+URxvt*tabbed*tab-bg: 0
+
+!----------------
+!Clipboard
+!----------------
+URxvt*keysym*M-c: perl:clipboard:copy
+URxvt*keysym*C-v: perl:clipboard:paste
+
+!-------------------------------------------------------------------------------
+!
+!	X T E R M - Setting
+!
+!
+!XTerm*underLine:		on
+XTerm*colorMode:		on
+XTerm*colorBD:			lightyellow
+!XTerm*colorBDMode:		off
+XTerm*colorUL:			yellow
+XTerm*colorULMode:		on
+XTerm*dynamicColors:		off
+XTerm*highlightSelection:	true
+XTerm*background:		color8
+XTerm*foreground:		color0
+Xterm*faceName: Bitstream Vera Sans Mono:pixelsize=12
+!colors
+!black
+XTerm*color0:		#000000
+XTerm*color8:		grey
+!red
+XTerm*color1:		#9e1828
+XTerm*color9:		#cf6171
+!green
+XTerm*color2:		#aece92
+XTerm*color10:		#c5f779
+!yellow
+XTerm*color3:		#968a38
+XTerm*color11:		#fff796
+!blue
+XTerm*color4:		#104b60
+XTerm*color12:		#4186be
+!magenta
+XTerm*color5:		#96c359
+XTerm*color13:		#cf9ebe
+!cyan
+XTerm*color6:		#418179
+XTerm*color14:		#71bebe
+!white
+XTerm*color7:		#bebebe
+

@@ -1,0 +1,89 @@
+#######################
+##   KTR ~/.conkyrc   ##
+#############flood.fr###
+
+
+background yes
+cpu_avg_samples 2
+alignment tr
+own_window yes
+own_window_class Conky
+own_window_type normal
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager
+own_window_transparent yes
+border_width 1
+default_color white
+stippled_borders 0
+default_outline_color white
+default_shade_color white
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+double_buffer yes
+use_xft yes
+#xftfont Bitstream Vera Sans Mono:size=10
+#xftfont Digital Readout Thick Upright:size=40
+gap_x 5
+gap_y 1
+minimum_size 100 100
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+update_interval 2.0
+uppercase no
+use_spacer none
+show_graph_scale no
+show_graph_range no
+
+color1 FFFFFF #White
+color2 FFFFFF #White
+color3 00FF00 #UrxvtGreen
+color4 1793D1 #ArchBlue
+color5 000000 #Black
+color6 FFFFFF #DeepSkyBlue
+color7 DDAA00 #LightOrange
+color8 FF8C00 #DarkOrange
+color9 7FFF00 #GreenChartreuse
+
+
+TEXT
+# Clock
+$alignc             ${font Digital Readout Thick Upright:size=40}${color1}${time %k}${color1}${time %M}
+# ${goto 22}${font Digital Readout Thick Upright:size=24}${time %d}${font Digital Readout Thick Upright:size=24}/${time %m}${font}
+
+${font}
+$alignr${color4}${font openlogos:bold:size=15}B${font} ${font DejaVu Sans Mono:size=10}${color1}$sysname $kernel ${color1}$nodename 
+${color4}$alignr Uptime: ${color1}$uptime${color4}
+
+${color1}${cpubar cpu1}
+${color1}${cpubar cpu2}
+${color1}${cpubar cpu3}
+${color1}${cpubar cpu4}
+${color1}${cpubar cpu5}
+${color1}${cpubar cpu6}
+${color1}${cpubar cpu7}
+${color1}${cpubar cpu8}
+${color4}
+$alignr Filesystem: ${color1}${fs_used_perc /}% used - ${fs_free /} free
+#$alignr ${color4}Data: ${color1}${fs_used /media/truecrypt1}/${fs_size /media/truecrypt1} - ${fs_used_perc /media/truecrypt1}%
+$alignr ${color4}Data: ${color1}${fs_used_perc /media/truecrypt1}% used - ${fs_free /media/truecrypt1} free
+$alignr ${color4}RAM:${color1} $mem/$memmax - $memperc% ${color4}
+$alignr Swap:${color1} $swap/$swapmax${color4}
+$alignr Hard Drive: ${color1}${execi 20 sudo hddtemp -n /dev/sda}°C ${color4}${color4}
+$alignr Fan: ${color1}${execi 10 sensors | grep 'fan1' | awk '{print $2}'} rpm${color4}
+$alignr CPU: ${color1}${execi 10 sensors | grep -A 1 'temp3' | cut -c16-22 | sed '$d'}  ${color4}
+$alignr GPU: ${color1}${execi 20 nvidia-settings -q gpucoretemp | grep "Attribute" | cut -d" " -f6 | cut -c -2}°C ${color4}
+$alignr Karma: ${color1}${execi 2000 /home/ktr/.bin/karma.sh} ${color4}
+$alignr Pacman: ${color1}${execi 500 /home/ktr/.bin/pacman-conky.sh} ${color4}
+
+# CPU Cores
+#${color1}${cpubar cpu2}
+#${color1}${cpubar cpu3}
+#${color1}${cpubar cpu4}
+#${color1}${cpubar cpu5}
+#${color1}${cpubar cpu6}
+#${color1}${cpubar cpu7}
+#${color1}${cpubar cpu8}
