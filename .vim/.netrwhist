@@ -1,4 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/ktr/etc/apt/sources.list.d'
 let g:netrw_dirhist_2='/home/ktr/.dotfiles/.zsh/.zsh'
+let g:netrw_dirhist_3='/home/ktr/.bin/ttyclock'
+let g:netrw_dirhist_4='/home/ktr/.bin/ttyclock/tty-clock'
+let g:netrw_dirhist_5='/home/ktr/.bin/processing/sketch_feb22b'
+let g:netrw_dirhist_6='/srv/http/dotcloud/stack-php-mysql/app'
+let g:netrw_dirhist_7='/home/ktr/.dotfiles'
+let g:netrw_dirhist_8='/home/ktr/.bin'
