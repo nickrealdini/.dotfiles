@@ -28,7 +28,6 @@ setopt CORRECT
 setopt noglobdots
 
 # common aliases
-alias zshrc-sync='wget --no-check-certificate -O .zshrc https://raw.github.com/kooothor/Dotfiles/master/.zshrc'
 alias r='tmux attach'
 alias ll='ls -la'
 alias vmi='vim'
@@ -51,7 +50,7 @@ export PROMPT="%{$fg[white]%}┌─[%{$fg[green]%}%n%{$fg[cyan]%}@%{$fg[green]%}
 # vim <3
 export EDITOR="vim"
 
-PATH=~/.scripts/:$PATH
+PATH=~/.bin/:$PATH
 export PATH
 
 # to have nice colors in ls
