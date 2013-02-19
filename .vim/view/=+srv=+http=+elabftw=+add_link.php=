@@ -2,26 +2,26 @@ let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 argglobal
 let s:cpo_save=&cpo
 set cpo&vim
-imap <buffer> <SNR>12_ragtagOclose  ><Left><Left>
-inoremap <buffer> <SNR>12_ragtagOopen <?php print 
-inoremap <buffer> <SNR>12_xhtmltrans <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 inoremap <buffer> <SNR>12_htmltrans <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+inoremap <buffer> <SNR>12_xhtmltrans <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+inoremap <buffer> <SNR>12_ragtagOopen <?php print 
+imap <buffer> <SNR>12_ragtagOclose  ><Left><Left>
 onoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 nnoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 onoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
 nnoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
-imap <buffer> & <Plug>ragtagXmlV
 imap <buffer> % <Plug>ragtagUrlV
-imap <buffer> & <Plug>ragtagXmlEncode
-imap <buffer> % <Plug>ragtagUrlEncode
-imap <buffer> " <NL>I<# A >F<NL>s
-imap <buffer> ' <#  >2hi
-imap <buffer> _ <NL>I< A >F<NL>s
-imap <buffer> - <  >2hi
-imap <buffer> ] <>O
-inoremap <buffer> > ?>
-inoremap <buffer> < <?php
+imap <buffer> & <Plug>ragtagXmlV
 imap <buffer>  /
+inoremap <buffer> < <?php
+inoremap <buffer> > ?>
+imap <buffer> ] <>O
+imap <buffer> - <  >2hi
+imap <buffer> _ <NL>I< A >F<NL>s
+imap <buffer> ' <#  >2hi
+imap <buffer> " <NL>I<# A >F<NL>s
+imap <buffer> % <Plug>ragtagUrlEncode
+imap <buffer> & <Plug>ragtagXmlEncode
 let &cpo=s:cpo_save
 unlet s:cpo_save
 setlocal keymap=
@@ -124,11 +124,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 53 - ((52 * winheight(0) + 35) / 71)
+let s:l = 54 - ((21 * winheight(0) + 13) / 27)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-53
+54
 normal! 0
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost

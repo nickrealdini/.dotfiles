@@ -7,7 +7,8 @@ set nocompatible
 set ignorecase
 " :tn for tabnew
 ca tn tabnew
-
+" Enable mouse
+set mouse=a
 " utf8 ftw
 set encoding=utf-8
 " tab navigation Ctrl-n for next, Ctrl-p for previous
@@ -52,6 +53,31 @@ syntax on
 "colorscheme desert
 colorscheme dante
 
+" FOLDS
+" save/restore foldings
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
+" get space to show/hide folds
+nnoremap <Space> za
+
+" pathogen is the plugin manager
+execute pathogen#infect()
+
+" Ctrl-t to close HTML tags
+au FileType html,xml,xsl,php source ~/.vim/bundle/closetag.vim
+
+" STATUS LINE
+set laststatus=2
+set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+set statusline=
+set statusline+=%<\                       " cut at start
+set statusline+=%2*[%n%H%M%R%W]%*\        " flags and buf no
+set statusline+=%-40f\                    " path
+set statusline+=%=%1*%y%*%*\              " file type
+set statusline+=%10((%l,%c)%)\            " line and column
+set statusline+=%P                        " percentage of file
+
 " PYTHON
 " #####################
 set tabstop=4
@@ -64,17 +90,8 @@ au FileType py set autoindent
 au FileType py set smartindent
 au FileType py set textwidth=79 " PEP-8 Friendly
 
-
-" Enable mouse
-set mouse=a
-
-" Ctrl-t for html autoclose tag 
-let g:ragtag_global_maps = 1
-
-"Switch to hex editor
-"noremap :%!xxd
-" Variables
-
+" BEPO
+" #####################
 " {W} -> [É]
 " ——————————
 " On remappe W sur É :
@@ -178,9 +195,3 @@ imap <C-t> <Esc>:tabnew<CR>
 map <S-h> gT
 map <S-l> gt
 
-" save/restore foldings
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
-
-" get space to show/hide folds
-nnoremap <Space> za
