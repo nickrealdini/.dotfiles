@@ -67,6 +67,9 @@ execute pathogen#infect()
 " Ctrl-t to close HTML tags
 au FileType html,xml,xsl,php source ~/.vim/bundle/closetag.vim
 
+" search is case sensitive only if you put a CAPITAL
+set smartcase
+
 " STATUS LINE
 set laststatus=2
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
