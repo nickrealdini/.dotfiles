@@ -5,6 +5,8 @@
 set nocompatible
 " Case insensitive search
 set ignorecase
+" search is case sensitive only if you put a CAPITAL
+set smartcase
 " :tn for tabnew
 ca tn tabnew
 " Enable mouse
@@ -65,10 +67,7 @@ nnoremap <Space> za
 execute pathogen#infect()
 
 " Ctrl-t to close HTML tags
-au FileType html,xml,xsl,php source ~/.vim/bundle/closetag.vim
-
-" search is case sensitive only if you put a CAPITAL
-set smartcase
+au FileType html,xml,xsl,php,erb source ~/.vim/bundle/closetag.vim
 
 " STATUS LINE
 set laststatus=2

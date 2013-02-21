@@ -30,6 +30,9 @@ setopt noglobdots
 # common aliases
 alias r='tmux attach'
 alias ll='ls -la'
+alias cp='cp -i'
+alias mv='mv -i'
+alias ls='ls --color=auto'
 alias vmi='vim'
 alias v='vim'
 alias c='clear'
