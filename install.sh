@@ -13,4 +13,5 @@ ln -s -i .dotfiles/.zshrc .zshrc
 ln -s -i .dotfiles/.tmux.conf .tmux.conf
 ln -s -i .dotfiles/.Xdefaults .Xdefaults
 ln -s -i .dotfiles/.conkyrc .conkyrc 
+ln -s -i .dotfiles/.mailcap .mailcap
 
