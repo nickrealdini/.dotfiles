@@ -52,8 +52,8 @@ export PROMPT="%{$fg[white]%}┌─[%{$fg[green]%}%n%{$fg[cyan]%}@%{$fg[green]%}
 
 # vim <3
 export EDITOR="vim"
-# tab cannot be used to go to normal mode, so we use tt
-bindkey -M viins 'tt' vi-cmd-mode
+# tab cannot be used to go to normal mode, so we use ee (not tt because of http)
+bindkey -M viins 'ee' vi-cmd-mode
 function zle-line-init zle-keymap-select {
     RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
     RPS2=$RPS1
