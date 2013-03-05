@@ -37,6 +37,7 @@ alias vmi='vim'
 alias v='vim'
 alias c='clear'
 alias df='df -h'
+alias free='free -h'
 alias g='git'
 alias gi='git'
 alias serve='python2 -m SimpleHTTPServer'
@@ -52,15 +53,15 @@ export PROMPT="%{$fg[white]%}┌─[%{$fg[green]%}%n%{$fg[cyan]%}@%{$fg[green]%}
 
 # vim <3
 export EDITOR="vim"
-# tab cannot be used to go to normal mode, so we use ee (not tt because of http)
-bindkey -M viins 'ee' vi-cmd-mode
-function zle-line-init zle-keymap-select {
-    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-    RPS2=$RPS1
-    zle reset-prompt
-    }
-zle -N zle-line-init
-zle -N zle-keymap-select
+# tab cannot be used to go to normal mode, so we use Ctrl-d 
+#bindkey -M viins '^D' vi-cmd-mode
+#function zle-line-init zle-keymap-select {
+#    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+#    RPS2=$RPS1
+#    zle reset-prompt
+#    }
+#zle -N zle-line-init
+#zle -N zle-keymap-select
 
 PATH=~/.bin/:$PATH
 export PATH
