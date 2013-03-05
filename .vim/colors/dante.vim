@@ -42,8 +42,8 @@ hi VertSplit	term=reverse cterm=reverse gui=bold,reverse guifg=gray40
 hi Title	term=bold ctermfg=magenta gui=bold guifg=aquamarine
 
 " syntax hi colors
-hi Comment	term=bold ctermfg=darkcyan guifg=cyan4
-hi PreProc	term=underline ctermfg=darkblue guifg=dodgerblue4
+hi Comment	term=bold ctermfg=white guifg=cyan4
+hi PreProc	term=underline ctermfg=white guifg=dodgerblue4
 hi Constant	term=underline ctermfg=darkred guifg=firebrick3
 hi Type		term=underline ctermfg=darkgreen gui=none guifg=chartreuse3
 hi Statement	term=bold ctermfg=darkyellow gui=none guifg=gold3
@@ -52,7 +52,7 @@ hi Ignore	term=bold ctermfg=white guifg=gray45
 hi Special	term=underline ctermfg=brown guifg=sienna
 hi Error	term=reverse ctermfg=gray ctermbg=red guifg=gray guibg=red3
 hi Todo		term=standout ctermfg=black ctermbg=yellow gui=bold guifg=gray10 guibg=yellow4
-hi Underlined	term=underline cterm=underline ctermfg=darkblue gui=underline guifg=slateblue
+hi Underlined	term=underline cterm=underline ctermfg=white gui=underline guifg=slateblue
 hi Number	term=underline ctermfg=darkred guifg=red2
 " syntax hi links
 hi link String		Constant
