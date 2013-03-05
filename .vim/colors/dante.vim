@@ -42,7 +42,7 @@ hi VertSplit	term=reverse cterm=reverse gui=bold,reverse guifg=gray40
 hi Title	term=bold ctermfg=magenta gui=bold guifg=aquamarine
 
 " syntax hi colors
-hi Comment	term=bold ctermfg=white guifg=cyan4
+hi Comment	term=bold ctermfg=cyan guifg=cyan4
 hi PreProc	term=underline ctermfg=white guifg=dodgerblue4
 hi Constant	term=underline ctermfg=darkred guifg=firebrick3
 hi Type		term=underline ctermfg=darkgreen gui=none guifg=chartreuse3
