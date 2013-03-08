@@ -15,4 +15,6 @@ ln -s -i .dotfiles/.Xdefaults .Xdefaults
 ln -s -i .dotfiles/.conkyrc .conkyrc 
 ln -s -i .dotfiles/.mailcap .mailcap
 ln -s -i .dotfiles/.config/awesome ~/.config/awesome
+ln -s -i .dotfiles/.mpd .mpd
+ln -s -i .dotfiles/.mpdconf .mpdconf
 
