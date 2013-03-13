@@ -178,7 +178,32 @@ for s = 1, screen.count() do
     -- Create a tasklist widget
     mytasklist[s] = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, mytasklist.buttons)
 
-    -- BATTERY widget
+    -- PACMAN --
+    -- upward arrow image
+    mypacmanimage = wibox.widget.imagebox()
+    mypacmanimage:set_image("/home/ktr/.config/awesome/pacman.png")
+
+    -- new updates textbox
+    mypacmanwidget = wibox.widget.textbox()
+
+    function getUpdates()
+        local updates = 0
+        local f = io.popen("pacman -Qu")
+
+        for line in f:lines() do
+        updates = updates + 1
+        end
+        f:close()
+
+        mypacmanwidget:set_markup(updates)
+    end
+
+    -- check for new packages every 5 mins
+    pacman_timer = timer({timeout = 300})
+    pacman_timer:connect_signal("timeout", function() getUpdates() end)
+    pacman_timer:start()
+
+    -- BATTERY --
     mybatterywidget = wibox.widget.textbox()
 
     function batteryInfo(adapter)
@@ -215,27 +240,29 @@ for s = 1, screen.count() do
         fcur:close()
         fcap:close()
         fsta:close()
-        end
+    end
 
     battery_timer = timer({timeout = 20})
     battery_timer:connect_signal("timeout", function() batteryInfo("BAT0") end)
-    battery_timer:start()
+    --oobah battery_timer:start()
 
     -- Create the wibox
     mywibox[s] = awful.wibox({ position = "top", screen = s })
 
     -- Widgets that are aligned to the left
     local left_layout = wibox.layout.fixed.horizontal()
-    left_layout:add(mylauncher)
+    -- left_layout:add(mylauncher)
     left_layout:add(mytaglist[s])
     left_layout:add(mypromptbox[s])
 
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
+    right_layout:add(mypacmanimage)
+    right_layout:add(mypacmanwidget)
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
-    right_layout:add(mybatterywidget)
+    --oobah right_layout:add(mybatterywidget)
 
     -- Now bring it all together (with the tasklist in the middle)
     local layout = wibox.layout.align.horizontal()

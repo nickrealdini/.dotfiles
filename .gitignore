@@ -1,2 +1,5 @@
 .vim/.netrwhist
 .vim/view/
+.mpd/log
+.mpd/state
+.mpd/pid
