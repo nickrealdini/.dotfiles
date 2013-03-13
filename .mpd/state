@@ -1,9 +1,9 @@
-sw_volume: 65
+sw_volume: 74
 audio_device_state:1:default detected output
 state: play
-current: 5064
-time: 131
-random: 1
+current: 1166
+time: 54
+random: 0
 repeat: 0
 single: 0
 consume: 0
@@ -7195,4 +7195,5 @@ playlist_begin
 7181:Zuri/SXSW 2011 Showcasing Artists/Tesoro.mp3
 7182:Zuri/SXSW 2011 Showcasing Artists/Tesoro.mp3
 7183:Zuri/SXSW 2011 Showcasing Artists/Tesoro.mp3
+7184:1731 Bach/100 Masterpieces Vol. 2 (1731-1775)/08 Oboe Concerto in D minor, 2nd movement.mp3
 playlist_end
