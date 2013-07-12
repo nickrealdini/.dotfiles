@@ -236,7 +236,12 @@ for s = 1, screen.count() do
             -- battery is full and plugged
             battery = "A/C"
         end
-        mybatterywidget:set_markup(spacer..battery.."%"..spacer)
+        
+        -- if battery:match("A/C") then
+        --    mybatterywidget:set_markup(spacer..battery..spacer)
+        --else
+            mybatterywidget:set_markup(spacer..battery.."%"..spacer)
+        -- end
         fcur:close()
         fcap:close()
         fsta:close()
@@ -244,7 +249,7 @@ for s = 1, screen.count() do
 
     battery_timer = timer({timeout = 20})
     battery_timer:connect_signal("timeout", function() batteryInfo("BAT0") end)
-    oobah battery_timer:start()
+    battery_timer:start()
 
     -- Create the wibox
     mywibox[s] = awful.wibox({ position = "top", screen = s })
@@ -454,7 +459,10 @@ client.connect_signal("manage", function (c, startup)
     c:connect_signal("mouse::enter", function(c)
         if awful.layout.get(c.screen) ~= awful.layout.suit.magnifier
             and awful.client.focus.filter(c) then
-            client.focus = c
+            -- TODO ktr no more focus with the mouse on tag 3
+            -- if (awful.tag.selected(1).name != 3) then
+            --  client.focus = c
+            -- end
         end
     end)
 

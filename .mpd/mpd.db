@@ -1,6 +1,6 @@
 info_begin
 format: 1
-mpd_version: 0.17.3
+mpd_version: 0.17.4
 fs_charset: UTF-8
 tag: Artist
 tag: ArtistSort
@@ -17458,7 +17458,7 @@ song_end
 end: DaVinci/SXSW 2011 Showcasing Artists
 end: DaVinci
 directory: Daft Punk
-mtime: 1362574305
+mtime: 1368519903
 begin: Daft Punk
 directory: Alive 1997
 mtime: 1362574262
@@ -17861,6 +17861,153 @@ Genre: Tribal
 mtime: 1362574306
 song_end
 end: Daft Punk/One More Time (Junior Vasquez
+directory: Random Access Memories
+mtime: 1368519850
+begin: Daft Punk/Random Access Memories
+song_begin: 01 - Give life back to music.mp3
+Time: 270
+Artist: Daft Punk
+AlbumArtist: Daft Punk
+Title: Give Life Back to Music
+Album: Random Access Memories
+Track: 1/13
+Date: 2013
+Genre: House
+mtime: 1368481990
+song_end
+song_begin: 02 - The game of love.mp3
+Time: 321
+Artist: Daft Punk
+AlbumArtist: Daft Punk
+Title: The Game of Love
+Album: Random Access Memories
+Track: 2/13
+Date: 2013
+Genre: House
+mtime: 1368481993
+song_end
+song_begin: 03 - Giorgio by moroder.mp3
+Time: 542
+Artist: Daft Punk
+AlbumArtist: Daft Punk
+Title: Giorgio By Moroder
+Album: Random Access Memories
+Track: 3/13
+Date: 2013
+Genre: House
+mtime: 1368481993
+song_end
+song_begin: 04 - Within.mp3
+Time: 225
+Artist: Daft Punk
+AlbumArtist: Daft Punk
+Title: Within
+Album: Random Access Memories
+Track: 4/13
+Date: 2013
+Genre: House
+mtime: 1368481994
+song_end
+song_begin: 05 - Instant crush.mp3
+Time: 333
+Artist: Daft Punk
+AlbumArtist: Daft Punk
+Title: Instant Crush
+Album: Random Access Memories
+Track: 5/13
+Date: 2013
+Genre: House
+mtime: 1368481991
+song_end
+song_begin: 06 - Lose yourself to dance.mp3
+Time: 350
+Artist: Daft Punk
+AlbumArtist: Daft Punk
+Title: Lose Yourself to Dance
+Album: Random Access Memories
+Track: 6/13
+Date: 2013
+Genre: House
+mtime: 1368481990
+song_end
+song_begin: 07 - Touch.mp3
+Time: 497
+Artist: Daft Punk
+AlbumArtist: Daft Punk
+Title: Touch
+Album: Random Access Memories
+Track: 7/13
+Date: 2013
+Genre: House
+mtime: 1368481992
+song_end
+song_begin: 08 - Get lucky.mp3
+Time: 366
+Artist: Daft Punk
+AlbumArtist: Daft Punk
+Title: Get Lucky
+Album: Random Access Memories
+Track: 8/13
+Date: 2013
+Genre: House
+mtime: 1368481994
+song_end
+song_begin: 09 - Beyond.mp3
+Time: 288
+Artist: Daft Punk
+AlbumArtist: Daft Punk
+Title: Beyond
+Album: Random Access Memories
+Track: 9/13
+Date: 2013
+Genre: House
+mtime: 1368481990
+song_end
+song_begin: 10 - Motherboard.mp3
+Time: 340
+Artist: Daft Punk
+AlbumArtist: Daft Punk
+Title: Motherboard
+Album: Random Access Memories
+Track: 10/13
+Date: 2013
+Genre: House
+mtime: 1368481994
+song_end
+song_begin: 11 - Fragments of time.mp3
+Time: 277
+Artist: Daft Punk
+AlbumArtist: Daft Punk
+Title: Fragments of Time
+Album: Random Access Memories
+Track: 11/13
+Date: 2013
+Genre: House
+mtime: 1368481990
+song_end
+song_begin: 12 - Doin' it right.mp3
+Time: 250
+Artist: Daft Punk
+AlbumArtist: Daft Punk
+Title: Doin' It Right
+Album: Random Access Memories
+Track: 12/13
+Date: 2013
+Genre: House
+mtime: 1368481990
+song_end
+song_begin: 13 - Contact.mp3
+Time: 379
+Artist: Daft Punk
+AlbumArtist: Daft Punk
+Title: Contact
+Album: Random Access Memories
+Track: 13/13
+Date: 2013
+Genre: House
+mtime: 1368481993
+song_end
+end: Daft Punk/Random Access Memories
 end: Daft Punk
 directory: Daft Punk v Jamiroquai
 mtime: 1362574305
@@ -17910,21 +18057,6 @@ mtime: 1362574307
 song_end
 end: Dame 55/SXSW 2011 Showcasing Artists
 end: Dame 55
-directory: Dance Laury Dance
-mtime: 1362574307
-begin: Dance Laury Dance
-directory: SXSW 2011 Showcasing Artists
-mtime: 1362574307
-begin: Dance Laury Dance/SXSW 2011 Showcasing Artists
-song_begin: Living For The Roll.mp3
-Time: 242
-Artist: Dance Laury Dance
-Title: Living For The Roll
-Album: SXSW 2011 Showcasing Artists
-mtime: 1362574308
-song_end
-end: Dance Laury Dance/SXSW 2011 Showcasing Artists
-end: Dance Laury Dance
 directory: Daniel Benjamin
 mtime: 1362574308
 begin: Daniel Benjamin
@@ -27808,8 +27940,182 @@ song_end
 end: I Was Totally Destroying It/SXSW 2011 Showcasing Artists
 end: I Was Totally Destroying It
 directory: IAM
-mtime: 1362574851
+mtime: 1368436946
 begin: IAM
+directory: Arts_Martiens
+mtime: 1368432767
+begin: IAM/Arts_Martiens
+song_begin: 01.Spartiate_Spirit.ogg
+Time: 261
+Artist: IAM
+Album: Arts Martiens
+Title: Spartiate Spirit
+Date: 2013
+Genre: Rap
+Track: 01
+mtime: 1368431766
+song_end
+song_begin: 02.Les_Raisons_De_La_Colère.ogg
+Time: 242
+Artist: IAM
+Album: Arts Martiens
+Title: Les Raisons De La Colère
+Date: 2013
+Genre: Rap
+Track: 02
+mtime: 1368431852
+song_end
+song_begin: 03.Tous_Les_Saints_De_La_Terre.ogg
+Time: 212
+Artist: IAM
+Album: Arts Martiens
+Title: Tous Les Saints De La Terre
+Date: 2013
+Genre: Rap
+Track: 03
+mtime: 1368431923
+song_end
+song_begin: 04.La_Part_Du_Démon.ogg
+Time: 223
+Artist: IAM
+Album: Arts Martiens
+Title: La Part Du Démon
+Date: 2013
+Genre: Rap
+Track: 04
+mtime: 1368431994
+song_end
+song_begin: 05.Benkei_&_Minamoto.ogg
+Time: 260
+Artist: IAM
+Album: Arts Martiens
+Title: Benkei & Minamoto
+Date: 2013
+Genre: Rap
+Track: 05
+mtime: 1368432070
+song_end
+song_begin: 06.4.2.1.ogg
+Time: 246
+Artist: IAM
+Album: Arts Martiens
+Title: 4.2.1
+Date: 2013
+Genre: Rap
+Track: 06
+mtime: 1368432138
+song_end
+song_begin: 07.Marvel.ogg
+Time: 274
+Artist: IAM
+Album: Arts Martiens
+Title: Marvel
+Date: 2013
+Genre: Rap
+Track: 07
+mtime: 1368432210
+song_end
+song_begin: 08.Misère.ogg
+Time: 244
+Artist: IAM
+Album: Arts Martiens
+Title: Misère
+Date: 2013
+Genre: Rap
+Track: 08
+mtime: 1368432271
+song_end
+song_begin: 09.LAmour_Que_LOn_Donne.ogg
+Time: 225
+Artist: IAM
+Album: Arts Martiens
+Title: L'Amour Que L'On Donne
+Date: 2013
+Genre: Rap
+Track: 09
+mtime: 1368432326
+song_end
+song_begin: 10.Habitude_feat_Faf_La_Rage.ogg
+Time: 250
+Artist: IAM
+Album: Arts Martiens
+Title: Habitude feat Faf La Rage
+Date: 2013
+Genre: Rap
+Track: 10
+mtime: 1368432384
+song_end
+song_begin: 11.Mon_Encre,_Si_Amère.ogg
+Time: 265
+Artist: IAM
+Album: Arts Martiens
+Title: Mon Encre, Si Amère
+Date: 2013
+Genre: Rap
+Track: 11
+mtime: 1368432443
+song_end
+song_begin: 12.Debout_Les_Braves.ogg
+Time: 260
+Artist: IAM
+Album: Arts Martiens
+Title: Debout Les Braves
+Date: 2013
+Genre: Rap
+Track: 12
+mtime: 1368432499
+song_end
+song_begin: 13.Après_La_Fête.ogg
+Time: 219
+Artist: IAM
+Album: Arts Martiens
+Title: Après La Fête
+Date: 2013
+Genre: Rap
+Track: 13
+mtime: 1368432544
+song_end
+song_begin: 14.Pain_Au_Chocolat.ogg
+Time: 223
+Artist: IAM
+Album: Arts Martiens
+Title: Pain Au Chocolat
+Date: 2013
+Genre: Rap
+Track: 14
+mtime: 1368432592
+song_end
+song_begin: 15.Sombres_Manoeuvres_-_Manoeuvres_Sombres.ogg
+Time: 403
+Artist: IAM
+Album: Arts Martiens
+Title: Sombres Manoeuvres - Manoeuvres Sombres
+Date: 2013
+Genre: Rap
+Track: 15
+mtime: 1368432674
+song_end
+song_begin: 16.Notre-Dame_Veille.ogg
+Time: 180
+Artist: IAM
+Album: Arts Martiens
+Title: Notre-Dame Veille
+Date: 2013
+Genre: Rap
+Track: 16
+mtime: 1368432706
+song_end
+song_begin: 17.Dernier_Coup_DEclat.ogg
+Time: 322
+Artist: IAM
+Album: Arts Martiens
+Title: Dernier Coup D'Eclat
+Date: 2013
+Genre: Rap
+Track: 17
+mtime: 1368432766
+song_end
+end: IAM/Arts_Martiens
 directory: Galaxie (Best Of)
 mtime: 1362574876
 begin: IAM/Galaxie (Best Of)
@@ -81104,5 +81410,5 @@ song_end
 end: young prisms/SXSW 2011 Showcasing Artists
 end: young prisms
 playlist_begin: ledjamradio.m3u
-mtime: 1363164928
+mtime: 1363167638
 playlist_end
