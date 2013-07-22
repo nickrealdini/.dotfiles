@@ -122,6 +122,8 @@ function extract () {
     fi
 }
 
+export LC_ALL="en_US.UTF-8"
+
 # local configuration       
 # if file is here and is readable, load it
 [[ -r ${HOME}/.zshrc.local ]] && source ${HOME}/.zshrc.local

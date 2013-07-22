@@ -96,8 +96,10 @@ myawesomemenu = {
    { "quit", awesome.quit }
 }
 
-mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "open terminal", terminal }
+mymainmenu = awful.menu({ items = { 
+    { "minecraft", "~/.bin/minecraft.sh" },
+                    { "open terminal", terminal },
+    { "awesome", myawesomemenu, beautiful.awesome_icon }
                                   }
                         })
 

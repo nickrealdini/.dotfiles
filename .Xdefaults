@@ -36,8 +36,8 @@ Urxvt*secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
 !-------------------
 URxvt*scrollBar:	false
 URxvt.perl-ext:      default,url-select
-!URxvt.perl-ext-common:      default,tabbed
-URxvt.perl-ext-common:      default
+URxvt.perl-ext-common:      default,tabbed
+!URxvt.perl-ext-common:      default
 !URxvt*matcher.button:   1 
 URxvt*keysym.M-u:    perl:url-select:select_next
 URxvt*url-select.launcher:   /usr/bin/firefox -new-tab
@@ -59,6 +59,7 @@ URxvt*tabbed*tab-bg: 0
 URxvt*keysym*M-c: perl:clipboard:copy
 URxvt*keysym*C-v: perl:clipboard:paste
 
+URxvt*termName:rxvt-unicode
 !-------------------------------------------------------------------------------
 !
 !	X T E R M - Setting
